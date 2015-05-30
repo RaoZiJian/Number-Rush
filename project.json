@@ -12,6 +12,8 @@
 
     "jsList" : [
         "src/resource.js",
-        "src/app.js"
+        "src/Constraint.js",
+        "src/Role.js",
+        "src/ChooseRoleScene.js"
     ]
 }
