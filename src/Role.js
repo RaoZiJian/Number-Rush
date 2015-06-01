@@ -1,28 +1,8 @@
 /**
  * Created by Kirito on 5/30/15.
  */
-var Role = cc.Sprite.extend({
+var RoleManager = {
 
-    roleId:1,
-
-    onEnter:function() {
-        this._super();
-    },
-
-    ctor: function (roleId) {
-        this.roleId = roleId
-        var resPath = res[roleId-1];
-        var resRect = cc.rect(0,192-48,48,48);
-        var sprite = cc.Sprite.create(resPath,resRect);
-        return sprite;
-    }
-})
-
-
-
-var RoleManager = cc.Class.extend({
-
-    ChooseRoleArray:[],
     ChooseRoleIdArray:[],
     RolesArray:[],
     RolesIdArray:[],
@@ -31,40 +11,115 @@ var RoleManager = cc.Class.extend({
 
     },
 
-    roleChooseTouchEvent: function () {
+    roleChooseTouchEvent:function() {
 
     },
 
-    generateRandomRoleId:function(){
-        var roleId = Math.floor(Math.random()*15+1);
-        for(var i =0;i<this.ChooseRoleIdArray.length;i++){
-            if(roleId != this.ChooseRoleIdArray[i]) {
-                return roleId;
-            }else{
-                roleId = this.generateRandomRoleId();
-            }
+    roleCreate: function (roleId) {
+
+        var resPath = ""
+        switch (roleId) {
+            case 1:
+                resPath = res.ROLE_1
+                break;
+            case 2:
+                resPath = res.ROLE_2
+                break;
+            case 3:
+                resPath = res.ROLE_3
+                break;
+            case 4:
+                resPath = res.ROLE_4
+                break;
+            case 5:
+                resPath = res.ROLE_5
+                break;
+            case 6:
+                resPath = res.ROLE_6
+                break;
+            case 7:
+                resPath = res.ROLE_7
+                break;
+            case 8:
+                resPath = res.ROLE_8
+                break;
+            case 9:
+                resPath = res.ROLE_9
+                break;
+            case 10:
+                resPath = res.ROLE_10
+                break;
+            case 11:
+                resPath = res.ROLE_11
+                break;
+            case 12:
+                resPath = res.ROLE_12
+                break;
+            case 13:
+                resPath = res.ROLE_13
+                break;
+            case 14:
+                resPath = res.ROLE_14
+                break;
+            case 15:
+                resPath = res.ROLE_15
+                break;
+            case 16:
+                resPath = res.ROLE_16
+                break;
+            default :
+                break;
         }
+
+        var resRect = cc.rect(0,0,48,48);
+        var role =  cc.Sprite.create(resPath,resRect);
+        role.setScale(2)
+        role.roleId = roleId
+
+        var animationFrames = []
+        for (var i = 0; i < 4; i++) {
+            var frameRect = resRect;
+            switch (i){
+                case 0:
+                    break;
+                case 1:
+                    frameRect = cc.rect(48,0,48,48);
+                    break;
+                case 2:
+                    frameRect = cc.rect(96,0,48,48)
+                    break;
+                case 3:
+                    frameRect = cc.rect(144,0,48,48)
+                    break;
+                default :
+                    break
+            }
+            var frame = new cc.SpriteFrame(resPath,frameRect)
+            animationFrames[i] = frame
+        }
+        var animation = new cc.Animation(animationFrames, 0.15 ,true);
+        //animation.setDelayPerUnit(2.8 / 14);
+        //animation.setRestoreOriginalFrame(true);
+
+        var action = cc.animate(animation);
+        role.runAction( new cc.RepeatForever(action));
+
+        return role;
     },
 
     createRandom16Roles:function(){
-        var roles = {};
+        var roles = [];
 
-        while(this.ChooseRoleIdArray.length!=16){
-            var roleId = this.generateRandomRoleId();
-            this.ChooseRoleIdArray[i] = role;
-            var role = new Role(roleId)
-            this.ChooseRoleArray[i] = role;
+        for(var i=1;i<=16;i++){
+            var role = this.roleCreate(i)
+            roles[i-1] = role;
         }
 
-        return this.ChooseRoleArray[i];
+        return roles;
     },
 
     clearRoleManager:function(){
-        this.ChooseRoleArray = [];
-        this.ChooseRoleIdArray = [];
-        this.RolesArray = [];
-        this.RolesIdArray = [];
-    }
-})
 
-var roleManager = new RoleManager();
+
+    }
+};

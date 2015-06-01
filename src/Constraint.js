@@ -4,6 +4,6 @@
 var Game_Constraint = {
 
     //选择场景各个role之间的间距
-    ChooseRoleOffset: 40
+    ChooseRoleOffset: 120
 
 }

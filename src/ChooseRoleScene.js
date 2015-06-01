@@ -18,16 +18,18 @@ var ChooseRoleLayer = cc.Layer.extend({
 
     onEnter:function() {
         this._super();
-        var roles = roleManager.createRandom16Roles();
+        var resRect = cc.Rect(0,192-48,48,48);
+
+        var roles = RoleManager.createRandom16Roles();
         for(var i =0;i<roles.length;i++){
 
-            roles[i].setPosition(i%4*Game_Constraint.ChooseRoleOffset,i%4*Game_Constraint.ChooseRoleOffset);
+            var row = Math.floor(i/4+1);
+            var column = i%4;
+            roles[i].setPosition(70+row*Game_Constraint.ChooseRoleOffset,50+column*Game_Constraint.ChooseRoleOffset);
             this.addChild(roles[i]);
         }
     }
-
 });
-
 
 
 var ChooseRoleScene = cc.Scene.extend({
