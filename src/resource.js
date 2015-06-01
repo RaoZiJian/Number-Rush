@@ -19,6 +19,17 @@ var res = {
     Btn_Start_Normal:"res/btn_start_normal.png",
     Btn_Start_Push:"res/btn_start_push.png",
 
+    Number_1: "res/numbers/1.png",
+    Number_2: "res/numbers/2.png",
+    Number_3: "res/numbers/3.png",
+    Number_4: "res/numbers/4.png",
+    Number_5: "res/numbers/5.png",
+    Number_6: "res/numbers/6.png",
+    Number_7: "res/numbers/7.png",
+    Number_8: "res/numbers/8.png",
+    Number_9: "res/numbers/9.png",
+    Number_0: "res/numbers/0.png",
+
     Logo:"res/logo.png",
 
     Audio_BGM:"res/BGM/Rondo in D for Violin & Piano.mp3"
