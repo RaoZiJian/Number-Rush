@@ -14,7 +14,14 @@ var res = {
     ROLE_13 : "res/roles/13.png",
     ROLE_14 : "res/roles/14.png",
     ROLE_15 : "res/roles/15.png",
-    ROLE_16 : "res/roles/16.png"
+    ROLE_16 : "res/roles/16.png",
+
+    Btn_Start_Normal:"res/btn_start_normal.png",
+    Btn_Start_Push:"res/btn_start_push.png",
+
+    Logo:"res/logo.png",
+
+    Audio_BGM:"res/BGM/Rondo in D for Violin & Piano.mp3"
 };
 
 var g_resources = [];
