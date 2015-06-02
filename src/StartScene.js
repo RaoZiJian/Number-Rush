@@ -87,6 +87,8 @@ var StartLayer = cc.Layer.extend({
         this._super();
         var winSize = cc.director.getWinSize();
 
+        cc.audioEngine.playMusic(res.Audio_BGM,true);
+
         //create background
         var background =new cc.LayerColor(new cc.Color(255,255,220,255),winSize.width,winSize.height);
         background.setPosition(0,0);

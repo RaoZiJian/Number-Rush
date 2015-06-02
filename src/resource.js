@@ -32,7 +32,7 @@ var res = {
 
     Logo:"res/logo.png",
 
-    Audio_BGM:"res/BGM/Rondo in D for Violin & Piano.mp3"
+    Audio_BGM:"res/BGM/RoyalFlushParty.mp3"
 };
 
 var g_resources = [];
