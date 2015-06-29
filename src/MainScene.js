@@ -134,13 +134,14 @@ var MainLayer = cc.Layer.extend({
         var busRect  = busBtn.getBoundingBox();
         var jiaRect  = jiaBtn.getBoundingBox();
 
-        if( 'touch' in cc.sys.capabilities )
+        //if ('touch' in cc.sys.capabilities) {
             cc.eventManager.addListener({
                 event: cc.EventListener.TOUCH_ONE_BY_ONE,
-                onTouchBegan:function () {
+
+                onTouchBegan: function (){
                     return true;
                 },
-                onTouchMoved:function (touch, event) {
+                onTouchMoved: function (touch,event) {
                     var location = touch.getLocation();
                     if(cc.rectContainsPoint(shu7Rect,location)){
                         if(title){
@@ -185,55 +186,7 @@ var MainLayer = cc.Layer.extend({
                     //    event.getCurrentTarget().moveMenu(event.getDelta());
                 }
             }, this);
-        else if ('mouse' in cc.sys.capabilities) {
-            cc.eventManager.addListener({
-                event: cc.EventListener.MOUSE,
-                onMouseMove: function (event) {
-                    var location = cc.p(event._x,event._y);
-                    if(cc.rectContainsPoint(shu7Rect,location)){
-                        if(title){
-                            title.removeFromParent()
-                        }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
-                        title.setAnchorPoint(0,0.5);
-                        title.setPosition(100,main007Height);
-                        main007.addChild(title);
-                    }else if(cc.rectContainsPoint(shu3Rect,location)){
-                        if(title){
-                            title.removeFromParent()
-                        }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0005.png"));
-                        title.setAnchorPoint(0,0.5);
-                        title.setPosition(100,main007Height);
-                        main007.addChild(title);
-                    }else if(cc.rectContainsPoint(busRect,location)){
-                        if(title){
-                            title.removeFromParent()
-                        }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0004.png"));
-                        title.setAnchorPoint(0,0.5);
-                        title.setPosition(100,main007Height);
-                        title.setVisible(true);
-                        main007.addChild(title);
-                    }else if(cc.rectContainsPoint(jiaRect,location)){
-                        if(title){
-                            title.removeFromParent()
-                        }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0003.png"));
-                        title.setAnchorPoint(0,0.5);
-                        title.setPosition(100,main007Height);
-                        main007.addChild(title);
-                    }else{
-                        if(title){
-                            title.removeFromParent()
-                        }
-                    }
-
-                    //if (event.getButton() == cc.EventMouse.BUTTON_LEFT)
-                    //    event.getCurrentTarget().moveMenu(event.getDelta());
-                }
-            }, this);
-        }
+        //}
     }
 });
 
