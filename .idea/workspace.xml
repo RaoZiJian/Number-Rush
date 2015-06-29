@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cda7fca-3540-4d0c-8260-792c91940205" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/1.参考1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/2.参考2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0000_guanbi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0001.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0002.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0003.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0004.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0005.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0006.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0007.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0008.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0009.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0010.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0011.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0012.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0013.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0014.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0015.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0016.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0018.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0019.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0020.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0014.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0014.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/count7.png" afterPath="$PROJECT_DIR$/res/count7/count7.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainScene.js" afterPath="$PROJECT_DIR$/src/MainScene.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/count7.plist" afterPath="$PROJECT_DIR$/res/count7/count7.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/count7.tps" afterPath="$PROJECT_DIR$/res_backup/count7/count7.tps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.json" afterPath="$PROJECT_DIR$/project.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource.js" afterPath="$PROJECT_DIR$/src/resource.js" />
     </list>
     <ignored path="NumbericGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +58,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="510">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="48" />
+            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="510">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -41,8 +70,8 @@
       <file leaf-file-name="project.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="360">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="375">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -61,8 +90,8 @@
       <file leaf-file-name="resource.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1065">
-              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1140">
+              <caret line="38" column="15" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -71,38 +100,18 @@
       <file leaf-file-name="MainScene.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3546284" vertical-offset="3058" max-vertical-offset="4545">
-              <caret line="222" column="21" selection-start-line="222" selection-start-column="21" selection-end-line="222" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.34102565" vertical-offset="169" max-vertical-offset="4485">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCActionTiledGrid.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions3d/CCActionTiledGrid.js">
+      <file leaf-file-name="count7.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/count7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9444447" vertical-offset="10833" max-vertical-offset="19050">
-              <caret line="764" column="7" selection-start-line="764" selection-start-column="7" selection-end-line="764" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCSpriteFrameCache.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteFrameCache.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5" vertical-offset="2153" max-vertical-offset="5115">
-              <caret line="184" column="55" selection-start-line="184" selection-start-column="55" selection-end-line="184" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCSpriteFrame.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteFrame.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3150" max-vertical-offset="6030">
-              <caret line="221" column="4" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1740">
+              <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -111,8 +120,8 @@
       <file leaf-file-name="StartScene.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res_backup/StartScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9230769" vertical-offset="4719" max-vertical-offset="5460">
-              <caret line="313" column="36" selection-start-line="313" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4002" max-vertical-offset="5460">
+              <caret line="290" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,12 +144,14 @@
         <option value="$PROJECT_DIR$/src/ChooseGameLayer.js" />
         <option value="$PROJECT_DIR$/src/componentManager.js" />
         <option value="$PROJECT_DIR$/src/StartScene.js" />
-        <option value="$PROJECT_DIR$/src/resource.js" />
         <option value="$PROJECT_DIR$/src/MainScene" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/src/resource.js" />
         <option value="$PROJECT_DIR$/project.json" />
+        <option value="$PROJECT_DIR$/res_backup/StartScene.js" />
         <option value="$PROJECT_DIR$/src/MainScene.js" />
+        <option value="$PROJECT_DIR$/src/count7.js" />
       </list>
     </option>
   </component>
@@ -219,6 +230,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res_backup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,24 +361,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="525">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="375">
@@ -483,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/js-bindings/bindings/script/jsb_boot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33246416" vertical-offset="13215" max-vertical-offset="26325">
-          <caret line="918" column="0" selection-start-line="918" selection-start-column="0" selection-end-line="918" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/layers/CCLayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6649283" vertical-offset="2145" max-vertical-offset="10530">
@@ -574,14 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDirector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21773142" vertical-offset="5593" max-vertical-offset="15435">
-          <caret line="384" column="23" selection-start-line="384" selection-start-column="23" selection-end-line="384" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res_backup/Role.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3551282" vertical-offset="1163" max-vertical-offset="1965">
@@ -638,60 +630,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="510">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/event-manager/CCEventListener.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23728813" vertical-offset="3958" max-vertical-offset="7515">
           <caret line="299" column="6" selection-start-line="299" selection-start-column="6" selection-end-line="299" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res_backup/StartScene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9230769" vertical-offset="4719" max-vertical-offset="5460">
-          <caret line="313" column="36" selection-start-line="313" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1065">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteFrame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3150" max-vertical-offset="6030">
-          <caret line="221" column="4" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteFrameCache.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="2153" max-vertical-offset="5115">
-          <caret line="184" column="55" selection-start-line="184" selection-start-column="55" selection-end-line="184" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="360">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -706,9 +648,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions3d/CCActionTiledGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9444447" vertical-offset="10833" max-vertical-offset="19050">
+        <state vertical-scroll-proportion="0.37447405" vertical-offset="10833" max-vertical-offset="19050">
           <caret line="764" column="7" selection-start-line="764" selection-start-column="7" selection-end-line="764" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteFrameCache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="2153" max-vertical-offset="5115">
+          <caret line="184" column="55" selection-start-line="184" selection-start-column="55" selection-end-line="184" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteFrame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2542373" vertical-offset="3150" max-vertical-offset="6030">
+          <caret line="221" column="4" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="375">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions/CCActionInstant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.589309" vertical-offset="10318" max-vertical-offset="11085">
+          <caret line="742" column="3" selection-start-line="742" selection-start-column="3" selection-end-line="742" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDirector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13090418" vertical-offset="6563" max-vertical-offset="15435">
+          <caret line="444" column="12" selection-start-line="444" selection-start-column="4" selection-end-line="444" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/js-bindings/bindings/script/jsb_boot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33246416" vertical-offset="12285" max-vertical-offset="26325">
+          <caret line="856" column="23" selection-start-line="856" selection-start-column="23" selection-end-line="856" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res_backup/StartScene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4002" max-vertical-offset="5460">
+          <caret line="290" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/count7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1740">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1140">
+          <caret line="38" column="15" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="510">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -722,8 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainScene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3546284" vertical-offset="3058" max-vertical-offset="4545">
-          <caret line="222" column="21" selection-start-line="222" selection-start-column="21" selection-end-line="222" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.34102565" vertical-offset="169" max-vertical-offset="4485">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding />
         </state>
       </provider>

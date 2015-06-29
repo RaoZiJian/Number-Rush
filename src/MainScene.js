@@ -15,17 +15,19 @@ var MainLayer = cc.Layer.extend({
     },
 
     btnShu7TouchEvent: function (sender, type) {
+        var main007Height = this.main007.getContentSize().height/2;
         switch (type) {
-            case ccui.Widget.TOUCH_BEGAN:
-                var main007Height = this.main007.getContentSize().height/2;
-                if(this.title){
-                    this.title.removeFromParent()
-                }
-                this.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
-                this.title.setAnchorPoint(0,0.5);
-                this.title.setPosition(100,main007Height);
-                this.main007.addChild(this.title);
             case ccui.Widget.TOUCH_ENDED:
+
+                var replaceScene = function(){
+                    var count7Scene = new Count7Scene();
+                    cc.director.runScene(count7Scene);
+                };
+                //var act1 = cc.scaleBy(2,4);
+                var act2 = cc.callFunc(replaceScene,this);
+                //var act3 = cc.sequence(act1,act2);
+                //sender.setZOrder(2);
+                sender.runAction(act2);
                 break;
             default:
                 break;
@@ -33,9 +35,9 @@ var MainLayer = cc.Layer.extend({
     },
 
     btnShu3TouchEvent: function (sender, type) {
+        var main007Height = this.main007.getContentSize().height/2;
         switch (type) {
-            case ccui.Widget.TOUCH_BEGAN:
-                var main007Height = this.main007.getContentSize().height/2;
+            case ccui.Widget.TOUCH_ENDED:
                 if(this.title){
                     this.title.removeFromParent()
                 }
@@ -43,17 +45,15 @@ var MainLayer = cc.Layer.extend({
                 this.title.setAnchorPoint(0,0.5);
                 this.title.setPosition(100,main007Height);
                 this.main007.addChild(this.title);
-            case ccui.Widget.TOUCH_ENDED:
-                break;
             default:
                 break;
         }
     },
 
     btnBusTouchEvent: function (sender, type) {
+        var main007Height = this.main007.getContentSize().height/2;
         switch (type) {
-            case ccui.Widget.TOUCH_BEGAN:
-                var main007Height = this.main007.getContentSize().height/2;
+            case ccui.Widget.TOUCH_ENDED:
                 if(this.title){
                     this.title.removeFromParent()
                 }
@@ -61,17 +61,15 @@ var MainLayer = cc.Layer.extend({
                 this.title.setAnchorPoint(0,0.5);
                 this.title.setPosition(100,main007Height);
                 this.main007.addChild(this.title);
-            case ccui.Widget.TOUCH_ENDED:
-                break;
             default:
                 break;
         }
     },
 
     btnJiaTouchEvent: function (sender, type) {
+        var main007Height = this.main007.getContentSize().height/2;
         switch (type) {
-            case ccui.Widget.TOUCH_BEGAN:
-                var main007Height = this.main007.getContentSize().height/2;
+            case ccui.Widget.TOUCH_ENDED:
                 if(this.title){
                     this.title.removeFromParent()
                 }
@@ -79,8 +77,6 @@ var MainLayer = cc.Layer.extend({
                 this.title.setAnchorPoint(0,0.5);
                 this.title.setPosition(100,main007Height);
                 this.main007.addChild(this.title);
-            case ccui.Widget.TOUCH_ENDED:
-                break;
             default:
                 break;
         }
@@ -182,7 +178,7 @@ var MainLayer = cc.Layer.extend({
                 onTouchMoved: function (touch, event) {
                     var target = event.getCurrentTarget();
                     var location = touch.getLocation();
-                    var main007Height = target.main007.getContentSize().height/2
+                    var main007Height = target.main007.getContentSize().height/2;
                     if (cc.rectContainsPoint(shu7Rect, location)) {
                         if (target.title) {
                             target.title.removeFromParent()

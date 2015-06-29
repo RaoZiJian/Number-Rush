@@ -33,7 +33,12 @@ var res = {
     MainSceneTexture: "res/main/main.png",
     MainScenePlist: "res/main/main.plist",
     MainSceneBG: "res/main/Main_0022_beijing.png",
-    MainScene10 : "res/main/Main_0010_dizhuan_bejing.png"
+    MainScene10 : "res/main/Main_0010_dizhuan_bejing.png",
+
+    Count7Texture:"res/count7/count7.png",
+    Count7Plist : "res/count7/count7.plist",
+    Count7Bg:"res/count7/Shu7_0020.png",
+    Count7Cat:"res/count7/Shu7_0021.png"
 
     //Main_0001: "res/main/Main_0001.png",
     //Main_0002: "res/main/Main_0002.png",

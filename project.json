@@ -13,6 +13,7 @@
     "jsList" : [
         "src/resource.js",
         "src/Constraint.js",
+        "src/count7.js",
         "src/MainScene.js"
     ]
 }

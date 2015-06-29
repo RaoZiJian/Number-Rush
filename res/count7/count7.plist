@@ -7,11 +7,11 @@
             <key>Shu7_0000_guanbi.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{423,230},{43,44}}</string>
+                <string>{{509,404},{43,44}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{43,44}}</string>
                 <key>sourceSize</key>
@@ -20,7 +20,7 @@
             <key>Shu7_0001.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{87,417},{117,23}}</string>
+                <string>{{2,472},{117,23}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>Shu7_0003.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{176,230},{109,160}}</string>
+                <string>{{578,230},{109,160}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +59,7 @@
             <key>Shu7_0004.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{287,230},{134,158}}</string>
+                <string>{{255,230},{134,158}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -72,7 +72,7 @@
             <key>Shu7_0005.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{423,306},{77,61}}</string>
+                <string>{{634,2},{77,61}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,11 +85,11 @@
             <key>Shu7_0006.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{100,230},{161,74}}</string>
+                <string>{{391,328},{161,74}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{161,74}}</string>
                 <key>sourceSize</key>
@@ -98,11 +98,11 @@
             <key>Shu7_0007.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,230},{185,96}}</string>
+                <string>{{391,230},{185,96}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{185,96}}</string>
                 <key>sourceSize</key>
@@ -111,11 +111,11 @@
             <key>Shu7_0009.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,417},{26,24}}</string>
+                <string>{{509,450},{26,24}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{26,24}}</string>
                 <key>sourceSize</key>
@@ -124,7 +124,7 @@
             <key>Shu7_0010.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{28,417},{57,25}}</string>
+                <string>{{537,452},{57,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -137,7 +137,7 @@
             <key>Shu7_0011.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{344,390},{135,58}}</string>
+                <string>{{554,392},{135,58}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -150,11 +150,11 @@
             <key>Shu7_0012.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{206,392},{136,58}}</string>
+                <string>{{634,81},{136,58}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{136,58}}</string>
                 <key>sourceSize</key>
@@ -163,7 +163,7 @@
             <key>Shu7_0013.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{481,230},{147,74}}</string>
+                <string>{{360,404},{147,74}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -173,14 +173,27 @@
                 <key>sourceSize</key>
                 <string>{147,74}</string>
             </dict>
-            <key>Shu7_0017.png</key>
+            <key>Shu7_0014.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{486,306},{103,98}}</string>
+                <string>{{2,230},{251,240}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{251,240}}</string>
+                <key>sourceSize</key>
+                <string>{251,240}</string>
+            </dict>
+            <key>Shu7_0017.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{255,390},{103,98}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{103,98}}</string>
                 <key>sourceSize</key>
@@ -194,9 +207,9 @@
             <key>realTextureFileName</key>
             <string>count7.png</string>
             <key>size</key>
-            <string>{634,452}</string>
+            <string>{697,497}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:d003e4a4fce3d480826429b84b666cae:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:c575f4d877b5fd3a52436f76db7868f3:1/1$</string>
             <key>textureFileName</key>
             <string>count7.png</string>
         </dict>
