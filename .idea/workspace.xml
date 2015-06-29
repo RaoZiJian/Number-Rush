@@ -71,8 +71,8 @@
       <file leaf-file-name="MainScene.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4719687" vertical-offset="3268" max-vertical-offset="4035">
-              <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3546284" vertical-offset="3058" max-vertical-offset="4545">
+              <caret line="222" column="21" selection-start-line="222" selection-start-column="21" selection-end-line="222" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -722,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainScene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4719687" vertical-offset="3268" max-vertical-offset="4035">
-          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3546284" vertical-offset="3058" max-vertical-offset="4545">
+          <caret line="222" column="21" selection-start-line="222" selection-start-column="21" selection-end-line="222" selection-end-column="21" />
           <folding />
         </state>
       </provider>

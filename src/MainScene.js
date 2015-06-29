@@ -17,7 +17,14 @@ var MainLayer = cc.Layer.extend({
     btnShu7TouchEvent: function (sender, type) {
         switch (type) {
             case ccui.Widget.TOUCH_BEGAN:
-                
+                var main007Height = this.main007.getContentSize().height/2;
+                if(this.title){
+                    this.title.removeFromParent()
+                }
+                this.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
+                this.title.setAnchorPoint(0,0.5);
+                this.title.setPosition(100,main007Height);
+                this.main007.addChild(this.title);
             case ccui.Widget.TOUCH_ENDED:
                 break;
             default:
@@ -27,6 +34,15 @@ var MainLayer = cc.Layer.extend({
 
     btnShu3TouchEvent: function (sender, type) {
         switch (type) {
+            case ccui.Widget.TOUCH_BEGAN:
+                var main007Height = this.main007.getContentSize().height/2;
+                if(this.title){
+                    this.title.removeFromParent()
+                }
+                this.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0005.png"));
+                this.title.setAnchorPoint(0,0.5);
+                this.title.setPosition(100,main007Height);
+                this.main007.addChild(this.title);
             case ccui.Widget.TOUCH_ENDED:
                 break;
             default:
@@ -36,6 +52,15 @@ var MainLayer = cc.Layer.extend({
 
     btnBusTouchEvent: function (sender, type) {
         switch (type) {
+            case ccui.Widget.TOUCH_BEGAN:
+                var main007Height = this.main007.getContentSize().height/2;
+                if(this.title){
+                    this.title.removeFromParent()
+                }
+                this.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0004.png"));
+                this.title.setAnchorPoint(0,0.5);
+                this.title.setPosition(100,main007Height);
+                this.main007.addChild(this.title);
             case ccui.Widget.TOUCH_ENDED:
                 break;
             default:
@@ -45,6 +70,15 @@ var MainLayer = cc.Layer.extend({
 
     btnJiaTouchEvent: function (sender, type) {
         switch (type) {
+            case ccui.Widget.TOUCH_BEGAN:
+                var main007Height = this.main007.getContentSize().height/2;
+                if(this.title){
+                    this.title.removeFromParent()
+                }
+                this.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0003.png"));
+                this.title.setAnchorPoint(0,0.5);
+                this.title.setPosition(100,main007Height);
+                this.main007.addChild(this.title);
             case ccui.Widget.TOUCH_ENDED:
                 break;
             default:
