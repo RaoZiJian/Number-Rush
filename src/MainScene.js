@@ -146,7 +146,7 @@ var MainLayer = cc.Layer.extend({
             cc.eventManager.addListener({
                 event: cc.EventListener.TOUCH_ONE_BY_ONE,
 
-                onTouchBegan: function () {
+                onTouchBegan: function (touch,event) {
                     var location = touch.getLocation();
                     if (cc.rectContainsPoint(shu7Rect, location)) {
                         if (title) {
