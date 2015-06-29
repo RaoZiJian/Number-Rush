@@ -1,5 +1,7 @@
 var MainLayer = cc.Layer.extend({
 
+    title:null,
+    main007:null,
     ctor:function(){
         this._super();
     },
@@ -15,13 +17,7 @@ var MainLayer = cc.Layer.extend({
     btnShu7TouchEvent: function (sender, type) {
         switch (type) {
             case ccui.Widget.TOUCH_BEGAN:
-                //if (this.title) {
-                //    this.title.removeFromParent()
-                //}
-                //this.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
-                //this.title.setAnchorPoint(0, 0.5);
-                //this.title.setPosition(100, this.main007.getContentSize().height/2);
-                //this.main007.addChild(this.title);
+                
             case ccui.Widget.TOUCH_ENDED:
                 break;
             default:
@@ -88,20 +84,20 @@ var MainLayer = cc.Layer.extend({
         main002.setPosition(100,wallBg.getContentSize().height/2);
         wallBg.addChild(main002,1);
 
-        //the title background at the wall background
-        var main007 = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0007_tishikuang_UI.png"));
-        main007.setAnchorPoint(0,0.5);
-        main007.setScaleX(0.8);
-        var main007Height = main007.getContentSize().height/2
-        main007.setPosition(170,wallBg.getContentSize().height/2)
-        wallBg.addChild(main007,1);
+        //the this.title background at the wall background
+        this.main007 = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0007_tishikuang_UI.png"));
+        this.main007.setAnchorPoint(0,0.5);
+        this.main007.setScaleX(0.8);
+        var main007Height = this.main007.getContentSize().height/2
+        this.main007.setPosition(170,wallBg.getContentSize().height/2)
+        wallBg.addChild(this.main007,1);
 
-        //the title
-        var title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
-        title.setAnchorPoint(0,0.5);
-        title.setPosition(100,main007Height);
-        title.setVisible(false);
-        main007.addChild(title);
+        //the this.title
+        this.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
+        this.title.setAnchorPoint(0,0.5);
+        this.title.setPosition(100,main007Height);
+        this.title.setVisible(false);
+        this.main007.addChild(this.title);
 
         //the clouds
         var main021 = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0021_yuncai.png"));
@@ -147,86 +143,50 @@ var MainLayer = cc.Layer.extend({
                 event: cc.EventListener.TOUCH_ONE_BY_ONE,
 
                 onTouchBegan: function (touch,event) {
-                    var location = touch.getLocation();
-                    if (cc.rectContainsPoint(shu7Rect, location)) {
-                        if (title) {
-                            title.removeFromParent()
-                        }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
-                        title.setAnchorPoint(0, 0.5);
-                        title.setPosition(100, main007Height);
-                        main007.addChild(title);
-                    } else if (cc.rectContainsPoint(shu3Rect, location)) {
-                        if (title) {
-                            title.removeFromParent()
-                        }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0005.png"));
-                        title.setAnchorPoint(0, 0.5);
-                        title.setPosition(100, main007Height);
-                        main007.addChild(title);
-                    } else if (cc.rectContainsPoint(busRect, location)) {
-                        if (title) {
-                            title.removeFromParent()
-                        }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0004.png"));
-                        title.setAnchorPoint(0, 0.5);
-                        title.setPosition(100, main007Height);
-                        title.setVisible(true);
-                        main007.addChild(title);
-                    } else if (cc.rectContainsPoint(jiaRect, location)) {
-                        if (title) {
-                            title.removeFromParent()
-                        }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0003.png"));
-                        title.setAnchorPoint(0, 0.5);
-                        title.setPosition(100, main007Height);
-                        main007.addChild(title);
-                    }
                     return true;
                 },
                 onTouchMoved: function (touch, event) {
+                    var target = event.getCurrentTarget();
                     var location = touch.getLocation();
+                    var main007Height = target.main007.getContentSize().height/2
                     if (cc.rectContainsPoint(shu7Rect, location)) {
-                        if (title) {
-                            title.removeFromParent()
+                        if (target.title) {
+                            target.title.removeFromParent()
                         }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
-                        title.setAnchorPoint(0, 0.5);
-                        title.setPosition(100, main007Height);
-                        main007.addChild(title);
+                        target.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
+                        target.title.setAnchorPoint(0, 0.5);
+                        target.title.setPosition(100, main007Height);
+                        target.main007.addChild(target.title);
                     } else if (cc.rectContainsPoint(shu3Rect, location)) {
-                        if (title) {
-                            title.removeFromParent()
+                        if (target.title) {
+                            target.title.removeFromParent()
                         }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0005.png"));
-                        title.setAnchorPoint(0, 0.5);
-                        title.setPosition(100, main007Height);
-                        main007.addChild(title);
+                        target.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0005.png"));
+                        target.title.setAnchorPoint(0, 0.5);
+                        target.title.setPosition(100, main007Height);
+                        target.main007.addChild(target.title);
                     } else if (cc.rectContainsPoint(busRect, location)) {
-                        if (title) {
-                            title.removeFromParent()
+                        if (target.title) {
+                            target.title.removeFromParent()
                         }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0004.png"));
-                        title.setAnchorPoint(0, 0.5);
-                        title.setPosition(100, main007Height);
-                        title.setVisible(true);
-                        main007.addChild(title);
+                        target.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0004.png"));
+                        target.title.setAnchorPoint(0, 0.5);
+                        target.title.setPosition(100, main007Height);
+                        target.title.setVisible(true);
+                        target.main007.addChild(target.title);
                     } else if (cc.rectContainsPoint(jiaRect, location)) {
-                        if (title) {
-                            title.removeFromParent()
+                        if (target.title) {
+                            target.title.removeFromParent()
                         }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0003.png"));
-                        title.setAnchorPoint(0, 0.5);
-                        title.setPosition(100, main007Height);
-                        main007.addChild(title);
+                        target.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0003.png"));
+                        target.title.setAnchorPoint(0, 0.5);
+                        target.title.setPosition(100, main007Height);
+                        target.main007.addChild(target.title);
                     } else {
-                        if (title) {
-                            title.removeFromParent()
+                        if (target.title) {
+                            target.title.removeFromParent()
                         }
                     }
-
-                    //if (event.getButton() == cc.EventMouse.BUTTON_LEFT)
-                    //    event.getCurrentTarget().moveMenu(event.getDelta());
                 }
             }, this);
         }else if ('mouse' in cc.sys.capabilities) {
@@ -234,42 +194,44 @@ var MainLayer = cc.Layer.extend({
                 event: cc.EventListener.MOUSE,
                 onMouseMove: function (event) {
                     var location = cc.p(event._x,event._y);
+                    var target = event.getCurrentTarget();
+                    var main007Height = target.main007.getContentSize().height/2
                     if(cc.rectContainsPoint(shu7Rect,location)){
-                        if(title){
-                            title.removeFromParent()
+                        if(target.title){
+                            target.title.removeFromParent()
                         }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
-                        title.setAnchorPoint(0,0.5);
-                        title.setPosition(100,main007Height);
-                        main007.addChild(title);
+                        target.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0006.png"));
+                        target.title.setAnchorPoint(0,0.5);
+                        target.title.setPosition(100,main007Height);
+                        target.main007.addChild(target.title);
                     }else if(cc.rectContainsPoint(shu3Rect,location)){
-                        if(title){
-                            title.removeFromParent()
+                        if(target.title){
+                            target.title.removeFromParent()
                         }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0005.png"));
-                        title.setAnchorPoint(0,0.5);
-                        title.setPosition(100,main007Height);
-                        main007.addChild(title);
+                        target.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0005.png"));
+                        target.title.setAnchorPoint(0,0.5);
+                        target.title.setPosition(100,main007Height);
+                        target.main007.addChild(target.title);
                     }else if(cc.rectContainsPoint(busRect,location)){
-                        if(title){
-                            title.removeFromParent()
+                        if(target.title){
+                            target.title.removeFromParent()
                         }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0004.png"));
-                        title.setAnchorPoint(0,0.5);
-                        title.setPosition(100,main007Height);
-                        title.setVisible(true);
-                        main007.addChild(title);
+                        target.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0004.png"));
+                        target.title.setAnchorPoint(0,0.5);
+                        target.title.setPosition(100,main007Height);
+                        target.title.setVisible(true);
+                        target.main007.addChild(target.title);
                     }else if(cc.rectContainsPoint(jiaRect,location)){
-                        if(title){
-                            title.removeFromParent()
+                        if(target.title){
+                            target.title.removeFromParent()
                         }
-                        title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0003.png"));
-                        title.setAnchorPoint(0,0.5);
-                        title.setPosition(100,main007Height);
-                        main007.addChild(title);
+                        target.title = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Main_0003.png"));
+                        target.title.setAnchorPoint(0,0.5);
+                        target.title.setPosition(100,main007Height);
+                        target.main007.addChild(target.title);
                     }else{
-                        if(title){
-                            title.removeFromParent()
+                        if(target.title){
+                            target.title.removeFromParent()
                         }
                     }
                 }
