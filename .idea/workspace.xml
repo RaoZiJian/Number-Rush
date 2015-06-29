@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cda7fca-3540-4d0c-8260-792c91940205" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0008.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0000_guanbi.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0000_guanbi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0001.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0002.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0002.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0003.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0003.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0004.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0004.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0005.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0005.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0006.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0006.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0007.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0007.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0009.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0009.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0010.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0010.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0011.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0011.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0012.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0012.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0013.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0013.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0017.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0017.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0018.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0018.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0019.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0019.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0020.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0020.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.json" afterPath="$PROJECT_DIR$/project.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainScene.js" afterPath="$PROJECT_DIR$/src/MainScene.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NumbericGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="project.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07936508" vertical-offset="0" max-vertical-offset="756">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="360">
               <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding />
             </state>
@@ -86,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainScene.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainScene.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="3225">
-              <caret line="145" column="45" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.452412" vertical-offset="2278" max-vertical-offset="3990">
+              <caret line="175" column="15" selection-start-line="175" selection-start-column="15" selection-end-line="175" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -147,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/MainScene" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/src/MainScene.js" />
         <option value="$PROJECT_DIR$/project.json" />
+        <option value="$PROJECT_DIR$/src/MainScene.js" />
       </list>
     </option>
   </component>
@@ -720,18 +703,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainScene.js">
+    <entry file="file://$PROJECT_DIR$/project.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="3225">
-          <caret line="145" column="45" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="360">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.json">
+    <entry file="file://$PROJECT_DIR$/src/MainScene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07936508" vertical-offset="0" max-vertical-offset="756">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.452412" vertical-offset="2278" max-vertical-offset="3990">
+          <caret line="175" column="15" selection-start-line="175" selection-start-column="15" selection-end-line="175" selection-end-column="15" />
           <folding />
         </state>
       </provider>
