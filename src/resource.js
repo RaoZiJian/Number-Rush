@@ -30,6 +30,28 @@ var res = {
     Number_9: "res/numbers/9.png",
     Number_0: "res/numbers/0.png",
 
+    MainSceneTexture: "res/main/main.png",
+    MainScenePlist: "res/main/main.plist",
+    MainSceneBG: "res/main/Main_0022_beijing.png",
+    MainScene10 : "res/main/Main_0010_dizhuan_bejing.png"
+
+    //Main_0001: "res/main/Main_0001.png",
+    //Main_0002: "res/main/Main_0002.png",
+    //Main_0003: "res/main/Main_0003.png",
+    //Main_0004: "res/main/Main_0004.png",
+    //Main_0005: "res/main/Main_0005.png",
+    //Main_0006: "res/main/Main_0006.png",
+    //Main_0007_tishikuang_UI: "res/main/Main_0007_tishikuang_UI.png",
+    //Main_0008_jiajiajia_UI: "res/main/Main_0008_jiajiajia_UI.png",
+    //Main_0009_shu3_UI: "res/main/Main_0009_shu3_UI.png",
+    //Main_0010_dizhuan_bejing: "res/main/Main_0010_dizhuan_bejing.png",
+    //Main_0012_shu7_UI: "res/main/Main_0012_shu7_UI.png",
+    //Main_0013_tuzi_juese: "res/main/Main_0013_tuzi_juese.png",
+    //Main_0014_jiqiren_juese: "res/main/Main_0014_jiqiren_juese.png",
+    //Main_0015: "res/main/Main_0015.png",
+    //Main_0016_yinse_xingxing: "res/main/Main_0016_yinse_xingxing.png",
+
+
 
     //
     //
