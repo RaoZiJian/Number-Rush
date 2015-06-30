@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cda7fca-3540-4d0c-8260-792c91940205" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/1.参考1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/2.参考2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0000_guanbi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0005.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0006.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0007.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0008.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0009.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0011.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0012.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0013.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0014.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0015.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0016.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0018.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0019.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res_backup/数7/Shu7_0020.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/Shu7_0014.png" afterPath="$PROJECT_DIR$/res_backup/count7/Shu7_0014.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/count7.png" afterPath="$PROJECT_DIR$/res/count7/count7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainScene.js" afterPath="$PROJECT_DIR$/src/MainScene.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/count7.plist" afterPath="$PROJECT_DIR$/res/count7/count7.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/count7.tps" afterPath="$PROJECT_DIR$/res_backup/count7/count7.tps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.json" afterPath="$PROJECT_DIR$/project.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource.js" afterPath="$PROJECT_DIR$/src/resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Constraint.js" afterPath="$PROJECT_DIR$/src/Constraint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/count7.js" afterPath="$PROJECT_DIR$/src/count7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NumbericGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +31,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="510">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="510">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -70,7 +43,7 @@
       <file leaf-file-name="project.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="375">
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="375">
               <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
@@ -97,31 +70,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainScene.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainScene.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34102565" vertical-offset="169" max-vertical-offset="4485">
+            <state vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="4485">
               <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="count7.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="count7.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/count7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1740">
-              <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.46936116" vertical-offset="0" max-vertical-offset="2985">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartScene.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res_backup/StartScene.js">
+      <file leaf-file-name="CCLabelTTF.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/labelttf/CCLabelTTF.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4002" max-vertical-offset="5460">
-              <caret line="290" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6613" max-vertical-offset="12945">
+              <caret line="477" column="20" selection-start-line="477" selection-start-column="4" selection-end-line="477" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constraint.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Constraint.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <caret line="9" column="126" selection-start-line="9" selection-start-column="126" selection-end-line="9" selection-end-column="126" />
               <folding />
             </state>
           </provider>
@@ -136,7 +121,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/src/Constraint.js" />
         <option value="$PROJECT_DIR$/src/Role.js" />
         <option value="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/StartScene.js" />
         <option value="$PROJECT_DIR$/src/ChooseRoleScene.js" />
@@ -151,6 +135,7 @@
         <option value="$PROJECT_DIR$/project.json" />
         <option value="$PROJECT_DIR$/res_backup/StartScene.js" />
         <option value="$PROJECT_DIR$/src/MainScene.js" />
+        <option value="$PROJECT_DIR$/src/Constraint.js" />
         <option value="$PROJECT_DIR$/src/count7.js" />
       </list>
     </option>
@@ -191,41 +176,27 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemId" value="Number-Rush" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemId" value="Number-Rush" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemId" value="Number-Rush" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemId" value="Number-Rush" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemId" value="Number-Rush" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -235,11 +206,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemId" value="Number-Rush" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NumbericGame" />
+              <option name="myItemId" value="Number-Rush" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -264,14 +235,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -279,6 +246,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -323,7 +294,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24928162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -334,6 +304,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -361,22 +332,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="375">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="525">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
@@ -574,19 +529,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res_backup/Role.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3551282" vertical-offset="1163" max-vertical-offset="1965">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/physics/CCPhysicsSprite.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21923077" vertical-offset="639" max-vertical-offset="6450">
           <caret line="77" column="57" selection-start-line="77" selection-start-column="38" selection-end-line="77" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3653846" vertical-offset="0" max-vertical-offset="780">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="767">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,7 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5555556" vertical-offset="6450" max-vertical-offset="7230">
           <caret line="458" column="19" selection-start-line="458" selection-start-column="9" selection-end-line="458" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -618,15 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33246416" vertical-offset="29370" max-vertical-offset="35040">
           <caret line="1998" column="4" selection-start-line="1998" selection-start-column="4" selection-end-line="1998" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSprite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46936116" vertical-offset="14550" max-vertical-offset="15345">
-          <caret line="1018" column="36" selection-start-line="1018" selection-start-column="36" selection-end-line="1018" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23728813" vertical-offset="3958" max-vertical-offset="7515">
           <caret line="299" column="6" selection-start-line="299" selection-start-column="6" selection-end-line="299" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4231537" vertical-offset="2533" max-vertical-offset="4125">
           <caret line="207" column="6" selection-start-line="207" selection-start-column="6" selection-end-line="207" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="2153" max-vertical-offset="5115">
           <caret line="184" column="55" selection-start-line="184" selection-start-column="55" selection-end-line="184" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +603,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="375">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="375">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
@@ -682,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.589309" vertical-offset="10318" max-vertical-offset="11085">
           <caret line="742" column="3" selection-start-line="742" selection-start-column="3" selection-end-line="742" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,23 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33246416" vertical-offset="12285" max-vertical-offset="26325">
           <caret line="856" column="23" selection-start-line="856" selection-start-column="23" selection-end-line="856" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res_backup/StartScene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4002" max-vertical-offset="5460">
-          <caret line="290" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/count7.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1740">
-          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,16 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="510">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="1095">
@@ -744,10 +647,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="510">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res_backup/Role.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32692307" vertical-offset="1185" max-vertical-offset="1965">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSprite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8018253" vertical-offset="3135" max-vertical-offset="15345">
+          <caret line="274" column="27" selection-start-line="274" selection-start-column="4" selection-end-line="274" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res_backup/StartScene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45371577" vertical-offset="4002" max-vertical-offset="5460">
+          <caret line="290" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainScene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34102565" vertical-offset="169" max-vertical-offset="4485">
+        <state vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="4485">
           <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constraint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="9" column="126" selection-start-line="9" selection-start-column="126" selection-end-line="9" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/labelttf/CCLabelTTF.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6613" max-vertical-offset="12945">
+          <caret line="477" column="20" selection-start-line="477" selection-start-column="4" selection-end-line="477" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/count7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46936116" vertical-offset="0" max-vertical-offset="2985">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding />
         </state>
       </provider>
