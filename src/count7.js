@@ -81,11 +81,7 @@ var Count7Layer = cc.Layer.extend({
             var catDelay = cc.delayTime(2.8+i*0.2);
             var catAct1 = cc.scaleTo(0.3,1.15);
             var catAct2 = cc.scaleTo(0.1,1);
-            var catAct3 = cc.scaleTo(0.1,1.1);
-            var catAct6 = cc.scaleTo(0.1,1);
-            var catAct7 = cc.scaleTo(0.1,1.05);
-            var catAct8 = cc.scaleTo(0.1,1);
-            var catAct9 = cc.sequence(catDelay,catAct1,catAct2,catAct3,catAct6,catAct7,catAct8);
+            var catAct9 = cc.sequence(catDelay,catAct1,catAct2);
             player.runAction(catAct9);
             this.addChild(player);
             this.players.push(player);
