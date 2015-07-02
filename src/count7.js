@@ -28,7 +28,7 @@ var Count7Controller = cc.Class.extend({
 
         this.time = 0;
         this.count = 1;
-    },
+    }
 
 });
 
@@ -115,6 +115,15 @@ var Count7Layer = cc.Layer.extend({
         this._super();
     },
 
+    getSelfPlayer:function(){
+
+        for(var i=0;i<this.players.length;i++){
+            if(this.players[i].checkIsMe()){
+                return this.players[i];
+            }
+        }
+    },
+
     init:function(){
         if(!this._super()){
             return false;
@@ -135,7 +144,11 @@ var Count7Layer = cc.Layer.extend({
 
         if(this.countTime>=2){
 
-            this.players[this.countPlayerId-1].numberOff(this.countId);
+            var player = this.players[this.countPlayerId-1]
+            if(player.checkIsMe()){
+
+            }
+            player.numberOff(this.countId);
 
             if(++this.countPlayerId>8){
                 this.countPlayerId = 1;
@@ -168,8 +181,15 @@ var Count7Layer = cc.Layer.extend({
 
     startBtnTouchEvent:function(sender,type){
 
+        if(type == ccui.Widget.TOUCH_BEGAN){
+            sender.text.setScale(1.2);
+        }
+        if(type == ccui.Widget.TOUCH_CANCELED || type == ccui.Widget.TOUCH_MOVED){
+            sender.text.setScale(1);
+        }
         if(type==ccui.Widget.TOUCH_ENDED){
             var winSize = cc.director.getWinSize();
+            sender.text.setScale(1);
             sender.setVisible(false);
 
             var mainLayer = sender.getParent();
@@ -214,6 +234,7 @@ var Count7Layer = cc.Layer.extend({
             var countDown4Act3 = cc.callFunc(function(){
                 countDown4.removeFromParent();
                 mainLayer.scheduleUpdate();
+                mainLayer.passBtn.setVisible(true);
             });
             var countDown1Act3 = cc.callFunc(function(){
                 countDown1.removeFromParent();
@@ -231,7 +252,6 @@ var Count7Layer = cc.Layer.extend({
             var countDown3Act4 = cc.sequence(countDown3Act1,countDown3Act2,countDown3Act3);
             countDown3.runAction(countDown3Act4);
 
-            mainLayer.scheduleUpdate();
             //mainLayer.controller = new Count7Controller();
             //mainLayer.controller.begin(mainLayer.players);
         }
@@ -246,16 +266,44 @@ var Count7Layer = cc.Layer.extend({
         this.startBtn.setPosition(winSize.width/2,winSize.height/2-70);
         this.addChild(this.startBtn,1);
         this.startBtn.addTouchEventListener(this.startBtnTouchEvent ,this);
-        var text = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Shu7_0010.png"));
-        text.setPosition(this.startBtn.getContentSize().width/2,this.startBtn.getContentSize().height/2);
-        this.startBtn.addChild(text);
+        this.startBtn.text = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Shu7_0010.png"));
+        this.startBtn.text.setPosition(this.startBtn.getContentSize().width/2,this.startBtn.getContentSize().height/2);
+        this.startBtn.addChild(this.startBtn.text);
         this.startBtn.setScale(0);
 
-        var startBtnAct1 = cc.delayTime(6.5);
+        var startBtnAct1 = cc.delayTime(6);
         var startBtnAct2 = cc.scaleTo(0.1,1.2);
         var startBtnAct3 = cc.scaleTo(0.1,1);
         var startBtnAct4 = cc.sequence(startBtnAct1,startBtnAct2,startBtnAct3);
         this.startBtn.runAction(startBtnAct4);
+    },
+
+    passBtnTouchEvent:function(sender,type){
+        if(type == ccui.Widget.TOUCH_BEGAN){
+            sender.text.setScale(1.2)
+        }
+        if(type == ccui.Widget.TOUCH_CANCELED || type == ccui.Widget.TOUCH_MOVED){
+            sender.text.setScale(1);
+        }
+        if(type == ccui.Widget.TOUCH_ENDED){
+            sender.text.setScale(1)
+        }
+
+    },
+
+    initPassButton: function () {
+        //passBtn button
+        var winSize = cc.director.getWinSize();
+        var selfPlayer = this.getSelfPlayer();
+        this.passBtn = new ccui.Button();
+        this.passBtn.loadTextures("Shu7_0011.png","","",ccui.Widget.PLIST_TEXTURE);
+        this.passBtn.setPosition(selfPlayer.getContentSize().width/2,-20);
+        selfPlayer.addChild(this.passBtn);
+        this.passBtn.addTouchEventListener(this.passBtnTouchEvent ,this);
+        this.passBtn.text = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("Shu7_0009.png"));
+        this.passBtn.text.setPosition(this.passBtn.getContentSize().width/2,this.passBtn.getContentSize().height/2);
+        this.passBtn.addChild(this.passBtn.text);
+        this.passBtn.setVisible(false);
     },
 
     btnBackBtnTouchEvent: function (sender, type) {
@@ -352,6 +400,7 @@ var Count7Layer = cc.Layer.extend({
 
         this.initPlayers();
         this.initStartButton();
+        this.initPassButton();
     }
 });
 
