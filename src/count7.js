@@ -3,6 +3,39 @@
  */
 var MainScene;
 
+var Count7Controller = cc.Class.extend({
+    timeCount:0,
+    numberCount:0,
+    scheduleTime:0.5,
+    players:[],
+    ctor:function(players){
+        this.players = players;
+    },
+
+    timerCount: function (isKeepCount, callback,time) {
+
+        if(isKeepCount){
+            this.scheduleOnce(callback,time);
+            this.time++;
+        }else{
+            this.time++;
+            this.scheduleOnce(callback,time);
+        }
+        return this.time;
+    },
+
+    begin:function(){
+
+        this.time = 0;
+        this.count = 1;
+    },
+
+    isDivisibled7:function(num){
+
+        return num%7==0;
+    }
+});
+
 var Count7Player = cc.Sprite.extend({
 
     _name:null,
@@ -11,7 +44,7 @@ var Count7Player = cc.Sprite.extend({
     _isMe: false,
 
     ctor: function (isMe,sequenceId) {
-        this._super()
+        this._super();
         this._isMe = isMe;
         this._sequenceId = sequenceId;
 
@@ -26,7 +59,8 @@ var Count7Player = cc.Sprite.extend({
         this._nameLabel.setFontFillColor(cc.color(255,237,191));
         this._nameLabel.setFontSize(20);
         this._nameLabel.setPosition(100,20);
-        this.addChild(this._nameLabel);
+
+        //this.addChild(this._nameLabel);
     },
 
     getName: function () {
@@ -35,6 +69,16 @@ var Count7Player = cc.Sprite.extend({
 
     checkIsMe:function(){
         return this._isMe;
+    },
+
+    numberOff:function(num){
+        var numberOff = new cc.LabelBMFont(num,res.NumberTTF,60);
+        numberOff.setPosition(60,150);
+        numberOff.setScale(0);
+        numberOff.runAction(cc.sequence(cc.scaleTo(0.2,3),cc.delayTime(1),cc.callFunc(function(){
+            numberOff.removeFromParent();
+        })));
+        this.addChild(numberOff);
     },
 
     init: function () {
@@ -56,6 +100,11 @@ var Count7Layer = cc.Layer.extend({
     players:[],
     catBg:null,
     selfPlayer:null,
+    controller:null,
+    updateTime:0,
+    time:0,
+    countTime:0,
+    countId:1,
 
     ctor:function(){
         this._super();
@@ -63,10 +112,32 @@ var Count7Layer = cc.Layer.extend({
 
     init:function(){
         if(!this._super()){
-            return false
+            return false;
         }
 
         return true;
+    },
+
+    update:function(dt){
+        this.updateTime+=dt;
+        this.countTime+=dt;
+
+
+        if(this.updateTime>=0.01){
+            this.time+=0.01;
+            this.updateTime =0;
+        }
+
+        if(this.countTime>=2){
+
+            this.players[this.countId-1].numberOff(this.countId);
+
+            if(++this.countId>8){
+                this.countId = 1;
+            }
+
+            this.countTime=0;
+        }
     },
 
     initPlayers:function(){
@@ -79,7 +150,7 @@ var Count7Layer = cc.Layer.extend({
             }
             player.setPosition(Game_Constraint.Count7Positions[i].x+winSize.width/2,Game_Constraint.Count7Positions[i].y+winSize.height/2);
             player.setScale(0);
-            var catDelay = cc.delayTime(4.2+i*0.2);
+            var catDelay = cc.delayTime(3.7+i*0.2);
             var catAct1 = cc.scaleTo(0.3,1.15);
             var catAct2 = cc.scaleTo(0.1,1);
             var catAct9 = cc.sequence(catDelay,catAct1,catAct2);
@@ -92,7 +163,71 @@ var Count7Layer = cc.Layer.extend({
     startBtnTouchEvent:function(sender,type){
 
         if(type==ccui.Widget.TOUCH_ENDED){
+            var winSize = cc.director.getWinSize();
             sender.setVisible(false);
+
+            var mainLayer = sender.getParent();
+            var countDown1 = new cc.Sprite(res.Number_1);
+            var countDown2 = new cc.Sprite(res.Number_2);
+            var countDown3 = new cc.Sprite(res.Number_3);
+            var countDown4 = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("btn_start_normal.png"));
+            countDown1.setScale(2);
+            countDown2.setScale(2);
+            countDown3.setScale(2);
+            countDown4.setScale(2);
+            countDown1.setPosition(winSize.width/2,winSize.height/2);
+            countDown2.setPosition(winSize.width/2,winSize.height/2);
+            countDown3.setPosition(winSize.width/2,winSize.height/2);
+            countDown4.setPosition(winSize.width/2,winSize.height/2);
+            countDown1.setVisible(false);
+            countDown2.setVisible(false);
+            countDown3.setVisible(false);
+            countDown4.setVisible(false);
+            mainLayer.addChild(countDown1);
+            mainLayer.addChild(countDown2);
+            mainLayer.addChild(countDown3);
+            mainLayer.addChild(countDown4);
+            var countDown4Act1 = cc.callFunc(function(){
+                countDown4.setVisible(true);
+            });
+            var countDown3Act1 = cc.callFunc(function(){
+                countDown3.setVisible(true);
+            });
+            var countDown2Act1 = cc.callFunc(function(){
+                countDown2.setVisible(true);
+            });
+            var countDown1Act1 = cc.callFunc(function(){
+                countDown1.setVisible(true);
+            });
+
+            var countDown4Act2 = cc.scaleTo(0.7,0);
+            var countDown3Act2 = cc.scaleTo(0.7,0);
+            var countDown2Act2 = cc.scaleTo(0.7,0);
+            var countDown1Act2 = cc.scaleTo(0.7,0);
+
+            var countDown4Act3 = cc.callFunc(function(){
+                countDown4.removeFromParent();
+                mainLayer.scheduleUpdate();
+            });
+            var countDown1Act3 = cc.callFunc(function(){
+                countDown1.removeFromParent();
+                countDown4.runAction(cc.sequence(countDown4Act1,countDown4Act2,countDown4Act3));
+            });
+            var countDown2Act3 = cc.callFunc(function(){
+                countDown2.removeFromParent();
+                countDown1.runAction(cc.sequence(countDown1Act1,countDown1Act2,countDown1Act3));
+            });
+            var countDown3Act3 = cc.callFunc(function(){
+                countDown3.removeFromParent();
+                countDown2.runAction(cc.sequence(countDown2Act1,countDown2Act2,countDown2Act3));
+            });
+
+            var countDown3Act4 = cc.sequence(countDown3Act1,countDown3Act2,countDown3Act3);
+            countDown3.runAction(countDown3Act4);
+
+            mainLayer.scheduleUpdate();
+            //mainLayer.controller = new Count7Controller();
+            //mainLayer.controller.begin(mainLayer.players);
         }
     },
 
@@ -116,7 +251,6 @@ var Count7Layer = cc.Layer.extend({
         var startBtnAct4 = cc.sequence(startBtnAct1,startBtnAct2,startBtnAct3);
         this.startBtn.runAction(startBtnAct4);
     },
-
 
     btnBackBtnTouchEvent: function (sender, type) {
 

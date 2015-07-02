@@ -29,6 +29,7 @@ var res = {
     Number_8: "res/numbers/8.png",
     Number_9: "res/numbers/9.png",
     Number_0: "res/numbers/0.png",
+    NumberTTF:"res/TTF/number.fnt",
 
     MainSceneTexture: "res/main/main.png",
     MainScenePlist: "res/main/main.plist",
