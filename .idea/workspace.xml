@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cda7fca-3540-4d0c-8260-792c91940205" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/count7.png" afterPath="$PROJECT_DIR$/res/count7/count7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/TTF/number.png" afterPath="$PROJECT_DIR$/res/TTF/number.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/numberTTF.GlyphProject" afterPath="$PROJECT_DIR$/res_backup/numberTTF.GlyphProject" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/count7.js" afterPath="$PROJECT_DIR$/src/count7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/count7.plist" afterPath="$PROJECT_DIR$/res/count7/count7.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res_backup/count7/count7.tps" afterPath="$PROJECT_DIR$/res_backup/count7/count7.tps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource.js" afterPath="$PROJECT_DIR$/src/resource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/TTF/number.fnt" afterPath="$PROJECT_DIR$/res/TTF/number.fnt" />
     </list>
     <ignored path="NumbericGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,8 +84,8 @@
       <file leaf-file-name="count7.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/count7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60625815" vertical-offset="1560" max-vertical-offset="5670">
-              <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.9387223" vertical-offset="630" max-vertical-offset="5760">
+              <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -707,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/count7.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60625815" vertical-offset="1560" max-vertical-offset="5670">
-          <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.9387223" vertical-offset="630" max-vertical-offset="5760">
+          <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
           <folding />
         </state>
       </provider>

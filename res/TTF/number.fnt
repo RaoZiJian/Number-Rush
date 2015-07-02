@@ -1,18 +1,19 @@
 info face="Calibri-Italic" size=30 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=2,2
 common lineHeight=37 base=29 scaleW=128 scaleH=64 pages=1 packed=0
 page id=0 file="number.png"
-chars count=11
-char id=48 x=2 y=2 width=16 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="0"
-char id=53 x=20 y=2 width=16 height=21 xoffset=0 yoffset=8 xadvance=15 page=0 chnl=0 letter="5"
-char id=56 x=38 y=2 width=16 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="8"
-char id=57 x=56 y=2 width=16 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="9"
-char id=50 x=74 y=2 width=15 height=21 xoffset=0 yoffset=8 xadvance=15 page=0 chnl=0 letter="2"
-char id=51 x=91 y=2 width=15 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="3"
-char id=52 x=108 y=2 width=15 height=21 xoffset=0 yoffset=8 xadvance=15 page=0 chnl=0 letter="4"
-char id=54 x=2 y=25 width=15 height=21 xoffset=2 yoffset=8 xadvance=15 page=0 chnl=0 letter="6"
-char id=55 x=19 y=25 width=15 height=21 xoffset=2 yoffset=8 xadvance=15 page=0 chnl=0 letter="7"
-char id=49 x=36 y=25 width=13 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="1"
-char id=32 x=51 y=25 width=0 height=0 xoffset=0 yoffset=29 xadvance=7 page=0 chnl=0 letter="space"
+chars count=12
+char id=36807 x=2 y=2 width=29 height=28 xoffset=1 yoffset=3 xadvance=30 page=0 chnl=0 letter="过"
+char id=48 x=33 y=2 width=16 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="0"
+char id=53 x=51 y=2 width=16 height=21 xoffset=0 yoffset=8 xadvance=15 page=0 chnl=0 letter="5"
+char id=56 x=69 y=2 width=16 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="8"
+char id=57 x=87 y=2 width=16 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="9"
+char id=50 x=105 y=2 width=15 height=21 xoffset=0 yoffset=8 xadvance=15 page=0 chnl=0 letter="2"
+char id=51 x=2 y=32 width=15 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="3"
+char id=52 x=19 y=32 width=15 height=21 xoffset=0 yoffset=8 xadvance=15 page=0 chnl=0 letter="4"
+char id=54 x=36 y=32 width=15 height=21 xoffset=2 yoffset=8 xadvance=15 page=0 chnl=0 letter="6"
+char id=55 x=53 y=32 width=15 height=21 xoffset=2 yoffset=8 xadvance=15 page=0 chnl=0 letter="7"
+char id=49 x=70 y=32 width=13 height=21 xoffset=1 yoffset=8 xadvance=15 page=0 chnl=0 letter="1"
+char id=32 x=85 y=32 width=0 height=0 xoffset=0 yoffset=29 xadvance=7 page=0 chnl=0 letter="space"
 kernings count=2
 kerning first=56 second=32 amount=-3
 kerning first=55 second=32 amount=-1

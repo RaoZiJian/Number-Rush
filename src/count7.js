@@ -30,10 +30,6 @@ var Count7Controller = cc.Class.extend({
         this.count = 1;
     },
 
-    isDivisibled7:function(num){
-
-        return num%7==0;
-    }
 });
 
 var Count7Player = cc.Sprite.extend({
@@ -63,6 +59,11 @@ var Count7Player = cc.Sprite.extend({
         //this.addChild(this._nameLabel);
     },
 
+    isDivisibled7:function(num){
+
+        return num%7==0;
+    },
+
     getName: function () {
         return this._name;
     },
@@ -72,6 +73,9 @@ var Count7Player = cc.Sprite.extend({
     },
 
     numberOff:function(num){
+        if(this.isDivisibled7(num)){
+            num = "过"
+        }
         var numberOff = new cc.LabelBMFont(num,res.NumberTTF,60);
         numberOff.setPosition(60,150);
         numberOff.setScale(0);
@@ -105,6 +109,7 @@ var Count7Layer = cc.Layer.extend({
     time:0,
     countTime:0,
     countId:1,
+    countPlayerId:1,
 
     ctor:function(){
         this._super();
@@ -130,12 +135,13 @@ var Count7Layer = cc.Layer.extend({
 
         if(this.countTime>=2){
 
-            this.players[this.countId-1].numberOff(this.countId);
+            this.players[this.countPlayerId-1].numberOff(this.countId);
 
-            if(++this.countId>8){
-                this.countId = 1;
+            if(++this.countPlayerId>8){
+                this.countPlayerId = 1;
             }
 
+            this.countId++;
             this.countTime=0;
         }
     },
