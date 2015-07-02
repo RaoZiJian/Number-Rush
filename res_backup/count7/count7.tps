@@ -163,6 +163,7 @@
             <filename>Shu7_0013.png</filename>
             <filename>Shu7_0017.png</filename>
             <filename>Shu7_0014.png</filename>
+            <filename>Shu7_0000_maomi.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
