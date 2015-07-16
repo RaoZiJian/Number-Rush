@@ -110,6 +110,8 @@ var Count7Layer = cc.Layer.extend({
     countTime:0,
     countId:1,
     countPlayerId:1,
+    myTimeCountDown:0,
+    selfCallSeven:false,
 
     ctor:function(){
         this._super();
@@ -132,22 +134,70 @@ var Count7Layer = cc.Layer.extend({
         return true;
     },
 
+    passBtnTouchEvent:function(sender,type){
+        if(type == ccui.Widget.TOUCH_BEGAN){
+            sender.text.setScale(1.2)
+        }
+        if(type == ccui.Widget.TOUCH_CANCELED || type == ccui.Widget.TOUCH_MOVED){
+            sender.text.setScale(1);
+        }
+        if(type == ccui.Widget.TOUCH_ENDED){
+            sender.text.setScale(1);
+            var layer = cc.director.getRunningScene().count7Layer;
+            layer.selfCallSeven = true;
+            layer.passBtn.setEnabled(false);
+            var player = layer.getSelfPlayer();
+            player.numberOff(7);
+        }
+    },
+
     update:function(dt){
         this.updateTime+=dt;
         this.countTime+=dt;
-
 
         if(this.updateTime>=0.01){
             this.time+=0.01;
             this.updateTime =0;
         }
 
-        if(this.countTime>=2){
-
-            var player = this.players[this.countPlayerId-1]
-            if(player.checkIsMe()){
-
+        var player = this.players[this.countPlayerId-1];
+        if(player.checkIsMe()){
+            if(this.selfCallSeven==false) {
+                this.passBtn.setEnabled(true);
             }
+            this.myTimeCountDown+=dt;
+            cc.log("this.selfCallSeven is "+this.selfCallSeven);
+            if(this.myTimeCountDown>Game_Constraint.PlayerInitialVelocity){
+                this.passBtn.setEnabled(false);
+                if(this.selfCallSeven){
+                    if(this.countId%7!=0){
+                        this.gameOver(1);
+                    }else {
+                        if(++this.countPlayerId>8){
+                            this.countPlayerId = 1;
+                        }
+                        this.selfCallSeven=false;
+                        this.countId++;
+                        this.myTimeCountDown = 0;
+                        this.countTime=0;
+                        this.myTimeCountDown=0;
+                    }
+                }else{
+                    if(this.countId%7==0) {
+                        this.myTimeCountDown = 0;
+                        this.gameOver(2);
+                    }else{
+                        player.numberOff(this.countId);
+                        if(++this.countPlayerId>8){
+                            this.countPlayerId = 1;
+                        }
+                        this.countId++;
+                        this.countTime=0;
+                        this.myTimeCountDown=0;
+                    }
+                }
+            }
+        }else if(this.countTime>=Game_Constraint.PlayerInitialVelocity){
             player.numberOff(this.countId);
 
             if(++this.countPlayerId>8){
@@ -157,6 +207,18 @@ var Count7Layer = cc.Layer.extend({
             this.countId++;
             this.countTime=0;
         }
+
+    },
+
+    gameOver:function(type){
+        cc.log("GameOver");
+        this.unscheduleUpdate();
+        this.selfCallSeven=false;
+        this.countId=1;
+        this.myTimeCountDown = 0;
+        this.countTime=0;
+        this.myTimeCountDown=0;
+        this.updateTime=0;
     },
 
     initPlayers:function(){
@@ -164,7 +226,7 @@ var Count7Layer = cc.Layer.extend({
         var winSize = cc.director.getWinSize();
         for(var i=0;i<8;i++){
             var player = new Count7Player(false, i);
-            if(2==i) {
+            if(6==i) {
                 player = new Count7Player(true, i);
             }
             player.setPosition(Game_Constraint.Count7Positions[i].x+winSize.width/2,Game_Constraint.Count7Positions[i].y+winSize.height/2);
@@ -278,19 +340,6 @@ var Count7Layer = cc.Layer.extend({
         this.startBtn.runAction(startBtnAct4);
     },
 
-    passBtnTouchEvent:function(sender,type){
-        if(type == ccui.Widget.TOUCH_BEGAN){
-            sender.text.setScale(1.2)
-        }
-        if(type == ccui.Widget.TOUCH_CANCELED || type == ccui.Widget.TOUCH_MOVED){
-            sender.text.setScale(1);
-        }
-        if(type == ccui.Widget.TOUCH_ENDED){
-            sender.text.setScale(1)
-        }
-
-    },
-
     initPassButton: function () {
         //passBtn button
         var winSize = cc.director.getWinSize();
@@ -304,6 +353,7 @@ var Count7Layer = cc.Layer.extend({
         this.passBtn.text.setPosition(this.passBtn.getContentSize().width/2,this.passBtn.getContentSize().height/2);
         this.passBtn.addChild(this.passBtn.text);
         this.passBtn.setVisible(false);
+        this.passBtn.setEnabled(false);
     },
 
     btnBackBtnTouchEvent: function (sender, type) {
@@ -423,6 +473,7 @@ var Count7Scene = cc.Scene.extend({
     onEnter:function(){
         this._super();
         var layer = new Count7Layer();
+        this.count7Layer = layer;
         this.addChild(layer);
     }
 });

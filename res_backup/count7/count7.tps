@@ -165,6 +165,7 @@
             <filename>Shu7_0014.png</filename>
             <filename>Shu7_0000_maomi.png</filename>
             <filename>../btn_start_normal.png</filename>
+            <filename>gameover.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
