@@ -79,7 +79,7 @@ var Count7Player = cc.Sprite.extend({
         var numberOff = new cc.LabelBMFont(num,res.NumberTTF,60);
         numberOff.setPosition(60,150);
         numberOff.setScale(0);
-        numberOff.runAction(cc.sequence(cc.scaleTo(0.2,3),cc.delayTime(1),cc.callFunc(function(){
+        numberOff.runAction(cc.sequence(cc.scaleTo(0.2,3),cc.delayTime(Game_Constraint.PlayerInitialVelocity/2),cc.callFunc(function(){
             numberOff.removeFromParent();
         })));
         this.addChild(numberOff);
@@ -199,19 +199,19 @@ var Count7Layer = cc.Layer.extend({
             }
         }else if(this.countTime>=Game_Constraint.PlayerInitialVelocity){
             player.numberOff(this.countId);
-
             if(++this.countPlayerId>8){
                 this.countPlayerId = 1;
             }
-
             this.countId++;
             this.countTime=0;
         }
+    },
+
+    gameOverBtnTouchEvent:function(sender,type){
 
     },
 
     gameOver:function(type){
-        cc.log("GameOver");
         this.unscheduleUpdate();
         this.selfCallSeven=false;
         this.countId=1;
@@ -219,6 +219,12 @@ var Count7Layer = cc.Layer.extend({
         this.countTime=0;
         this.myTimeCountDown=0;
         this.updateTime=0;
+        var winSize = cc.director.getWinSize();
+        var gameOverBtn = new ccui.Button();
+        gameOverBtn.loadTextures("gameover.png","","",ccui.Widget.PLIST_TEXTURE);
+        gameOverBtn.setPosition(winSize.width/2,winSize.height/2-70);
+        this.addChild(gameOverBtn,1);
+        gameOverBtn.addTouchEventListener(this.gameOverBtnTouchEvent ,this);
     },
 
     initPlayers:function(){
@@ -313,9 +319,6 @@ var Count7Layer = cc.Layer.extend({
 
             var countDown3Act4 = cc.sequence(countDown3Act1,countDown3Act2,countDown3Act3);
             countDown3.runAction(countDown3Act4);
-
-            //mainLayer.controller = new Count7Controller();
-            //mainLayer.controller.begin(mainLayer.players);
         }
     },
 
