@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cda7fca-3540-4d0c-8260-792c91940205" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/TTF/FZ.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0000_guanbi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0001.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0002.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0003.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0004.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0005.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0006.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0007_kuang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0008_kuang2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0009.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0010.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0011.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0012.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0013.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0014.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0015.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0016_Number-Rush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0018.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0019.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/count_sven/Shu7_0020.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/main/Main_0010_dizhuan_bejing.png" afterPath="$PROJECT_DIR$/res/main/Main_0010_dizhuan_bejing.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/main/Main_0022_beijing.png" afterPath="$PROJECT_DIR$/res/main/Main_0022_beijing.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/Shu7_0020.png" afterPath="$PROJECT_DIR$/res/count7/Shu7_0020.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/Shu7_0021.png" afterPath="$PROJECT_DIR$/res/count7/Shu7_0021.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/count7/count7.png" afterPath="$PROJECT_DIR$/res/count7/count7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/main/main.png" afterPath="$PROJECT_DIR$/res/main/main.png" />
     </list>
     <ignored path="NumbericGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +53,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07936508" vertical-offset="0" max-vertical-offset="756">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="510">
               <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resource.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="resource.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="1155">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.3525641" vertical-offset="145" max-vertical-offset="1155">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -282,6 +309,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24928162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -293,7 +321,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -648,14 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="1155">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/labelttf/CCLabelTTF.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1825" max-vertical-offset="12945">
@@ -684,11 +703,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07936508" vertical-offset="0" max-vertical-offset="756">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="510">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3525641" vertical-offset="145" max-vertical-offset="1155">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
