@@ -38,6 +38,7 @@ var Count7Player = cc.Sprite.extend({
     _nameLabel:null,
     _sequenceId: null,
     _isMe: false,
+    numberSpeed:0,
 
     ctor: function (isMe,sequenceId) {
         this._super();
@@ -55,10 +56,12 @@ var Count7Player = cc.Sprite.extend({
         this._nameLabel.setFontFillColor(cc.color(255,237,191));
         this._nameLabel.setFontSize(20);
         this._nameLabel.setPosition(100,20);
-
+        this.numberSpeed = Game_Constraint.PlayerInitialVelocity;
         //this.addChild(this._nameLabel);
     },
-
+    setNumberSpeed:function(newSpeed){
+        this.numberSpeed = newSpeed;
+    },
     isDivisibled7:function(num){
 
         return num%7==0;
@@ -79,10 +82,10 @@ var Count7Player = cc.Sprite.extend({
         var numberOff = new cc.LabelBMFont(num,res.NumberTTF,60);
         numberOff.setPosition(60,150);
         numberOff.setScale(0);
-        numberOff.runAction(cc.sequence(cc.scaleTo(0.2,3),cc.delayTime(Game_Constraint.PlayerInitialVelocity/2),cc.callFunc(function(){
+        this.addChild(numberOff);
+        numberOff.runAction(cc.sequence(cc.scaleTo(this.numberSpeed/5,3),cc.delayTime(this.numberSpeed),cc.callFunc(function(){
             numberOff.removeFromParent();
         })));
-        this.addChild(numberOff);
     },
 
     init: function () {
@@ -108,13 +111,16 @@ var Count7Layer = cc.Layer.extend({
     updateTime:0,
     time:0,
     countTime:0,
+    resetTime:0,
     countId:1,
     countPlayerId:1,
     myTimeCountDown:0,
     selfCallSeven:false,
+    resetCd:0,
 
     ctor:function(){
         this._super();
+        this.resetCd = Game_Constraint.ResetCd;
     },
 
     getSelfPlayer:function(){
@@ -132,6 +138,57 @@ var Count7Layer = cc.Layer.extend({
         }
 
         return true;
+    },
+
+
+
+    resortSelfPosition:function(){
+
+        var result = [];
+        for (var i = 0; i<=7; i++)
+            result[i] = i;
+        for (var j = 7; j >=0; j--)
+        {
+            var randomId = Math.round(Math.random()*7);
+            var temp = result[j];
+            result[j] = result[randomId];
+            result[randomId] = temp;
+        }
+
+        var newPlayers = []
+        for(var index=0;index<result.length;index++){
+            var player = this.players[result[index]];
+            newPlayers[index] = player;
+        }
+        this.players = newPlayers;
+        var winSizeWidth = cc.director.getWinSize().width;
+        var winSizeHeight = cc.director.getWinSize().height;
+
+        for(var i = 0;i<this.players.length;i++){
+            var moveAction1 = cc.moveTo(0.2,cc.p(winSizeWidth/2+Game_Constraint.Count7Positions[i].x,winSizeHeight/2+Game_Constraint.Count7Positions[i].y));
+            this.players[i].runAction(moveAction1);
+
+            if(this.players[i].numberSpeed>Game_Constraint.FastestPlayerInitialVelocity) {
+                this.players[i].setNumberSpeed(this.players[i].numberSpeed / 2);
+            }
+        }
+
+        //var newPositionId = Math.round(Math.random()*7+1);
+        //var oldPlayer = this.players[newPositionId];
+        //cc.log("newPositionId is "+newPositionId);
+        //for(var i=0;i<this.players.length;i++){
+        //    if(this.players[i].checkIsMe()){
+        //        cc.log("i is "+i);
+        //        var temp = this.players[i];
+        //        this.players[i] = oldPlayer;
+        //        this.players[newPositionId] = temp;
+        //        var moveAction1 = cc.moveTo(0.2,cc.p(winSizeWidth/2+Game_Constraint.Count7Positions[i].x,winSizeHeight/2+Game_Constraint.Count7Positions[i].y))
+        //        this.players[i].runAction(moveAction1);
+        //        var moveAction2 = cc.moveTo(0.2,cc.p(winSizeWidth/2+Game_Constraint.Count7Positions[newPositionId].x,winSizeHeight/2+Game_Constraint.Count7Positions[newPositionId].y));
+        //        this.players[newPositionId].runAction(moveAction2);
+        //        break;
+        //    }
+        //}
     },
 
     passBtnTouchEvent:function(sender,type){
@@ -154,10 +211,19 @@ var Count7Layer = cc.Layer.extend({
     update:function(dt){
         this.updateTime+=dt;
         this.countTime+=dt;
+        this.resetTime+=dt;
 
         if(this.updateTime>=0.01){
             this.time+=0.01;
             this.updateTime =0;
+        }
+
+        if(this.resetTime>this.resetCd){
+            this.resetTime = 0;
+            this.resortSelfPosition();
+            if(this.resetCd>Game_Constraint.FastestResetCd) {
+                this.resetCd -= Game_Constraint.Acceleration;
+            }
         }
 
         var player = this.players[this.countPlayerId-1];
@@ -224,7 +290,7 @@ var Count7Layer = cc.Layer.extend({
         gameOverBtn.loadTextures("gameover.png","","",ccui.Widget.PLIST_TEXTURE);
         gameOverBtn.setPosition(winSize.width/2,winSize.height/2-70);
         this.addChild(gameOverBtn,1);
-        gameOverBtn.addTouchEventListener(this.gameOverBtnTouchEvent ,this);
+        gameOverBtn.addTouchEventListener(this.btnBackBtnTouchEvent ,this);
     },
 
     initPlayers:function(){
@@ -259,8 +325,8 @@ var Count7Layer = cc.Layer.extend({
             var winSize = cc.director.getWinSize();
             sender.text.setScale(1);
             sender.setVisible(false);
-
-            var mainLayer = sender.getParent();
+            cc.log("startBtnTouchEvent ended");
+            var mainLayer = cc.director.getRunningScene().count7Layer;
             var countDown1 = new cc.Sprite(res.Number_1);
             var countDown2 = new cc.Sprite(res.Number_2);
             var countDown3 = new cc.Sprite(res.Number_3);

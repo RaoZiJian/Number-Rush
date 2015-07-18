@@ -10,5 +10,17 @@ var Game_Constraint = {
     Count7Positions:[cc.p(0,280),cc.p(180,220),cc.p(240,40),cc.p(160,-140),cc.p(0,-200),cc.p(-160,-140),cc.p(-240,40),cc.p(-180,220)],
 
     //count down speed of players in count7 at beginning
-    PlayerInitialVelocity:2
+    PlayerInitialVelocity:1.5,
+
+    //the fastest speeds
+    FastestPlayerInitialVelocity:0.5,
+
+    //reset cd of position
+    ResetCd:5,
+
+    //acceleration
+    Acceleration:0.2,
+
+    //The fastest resetCd
+    FastestResetCd:2
 }
